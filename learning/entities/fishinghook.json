@@ -1,0 +1,18 @@
+{
+ "minecraft:entity": {
+    "format_version": 0.1,
+
+  "components": {
+   "minecraft:identifier": {
+    "id": "minecraft:fishinghook"
+   },
+   "minecraft:collision_box": {
+    "width": 0.15,
+    "height": 0.15
+   },
+   "minecraft:projectile": {
+    "onHit": { "stick_in_ground": { } }
+   }
+  }
+ }
+}

@@ -1,0 +1,98 @@
+{
+  "minecraft:entity": {
+    "format_version": 0.1,
+
+    "component_groups": {
+      "minecraft:slime_large": {
+        "minecraft:collision_box": {
+          "width": 1.04,
+          "height": 1.04
+        },
+        "minecraft:health": {
+          "value": 16,
+          "max": 16
+        },
+        "minecraft:movement": {
+          "value": 0.25
+        },
+        "minecraft:attack": {
+          "damage": 4
+        }
+      },
+
+      "minecraft:slime_medium": {
+        "minecraft:collision_box": {
+          "width": 0.78,
+          "height": 0.78
+        },
+        "minecraft:health": {
+          "value": 4,
+          "max": 4
+        },
+        "minecraft:movement": {
+          "value": 0.22
+        },
+        "minecraft:attack": {
+          "damage": 2
+        }
+      },
+
+      "minecraft:slime_small": {
+        "minecraft:collision_box": {
+          "width": 0.52,
+          "height": 0.52
+        },
+        "minecraft:health": {
+          "value": 1,
+          "max": 1
+        },
+        "minecraft:movement": {
+          "value": 0.21
+        },
+        "minecraft:attack": {
+          "damage": 0
+        }
+      }
+    },
+
+    "components": {
+      "minecraft:identifier": {
+        "id": "minecraft:slime"
+      },
+      "minecraft:type_family": {
+        "family": [ "slime", "monster" ]
+      },
+      "minecraft:nameable": {
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/slime.json"
+      },
+      "minecraft:behavior.slime_float": {
+        "priority": 1
+      },
+      "minecraft:behavior.slime_attack": {
+        "priority": 3
+      },
+      "minecraft:behavior.slime_random_direction": {
+        "priority": 4
+      },
+      "minecraft:behavior.slime_keep_on_jumping": {
+        "priority": 5
+      },
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 2,
+        "entity_types": [
+          {
+            "filters": { "other_with_families": [ "player", "irongolem", "snowgolem" ] },
+            "max_dist": 16
+          }
+        ]
+      }
+    },
+
+    "events": {
+      // definition added in code using setSlimeSize, ick
+      // this goes for both when the slime is spawned, as well as for the slimes that spawn on death
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+ "minecraft:entity": {
+    "format_version": 0.1,
+
+  "component_groups": {
+   "minecraft:exploding": {
+    "minecraft:explode": {
+     "fuseLength": 0,
+     "fuseLit": true,
+     "power": 1,
+     "causesFire": false
+    }
+   }
+  },
+
+  "components": {
+   "minecraft:identifier": {
+    "id": "minecraft:fireball.large"
+   },
+   "minecraft:collision_box": {
+    "width": 0.31,
+    "height": 0.31
+   },
+   "minecraft:projectile": {
+    
+    "onHit": {
+     "definition_event": {
+      "affectProjectile": true,
+      "eventTrigger": {
+            "event": "minecraft:explode",
+            "target": "self"
+      }
+     }
+    },
+    "power": 1.6,
+    "gravity": 0.00,
+    "inertia": 1,
+    "uncertaintyBase": 16,
+    "uncertaintyMultiplier": 4,
+    "anchor": 1,
+    "offset": [ 0, -0.1, 0 ],
+    "reflectOnHurt": true,
+    "catchFire": true
+   }
+  },
+  "events": {
+   "minecraft:explode": {
+    "add": {
+     "component_groups": [
+      "minecraft:exploding"
+     ]
+    }
+   }
+  }
+ }
+}

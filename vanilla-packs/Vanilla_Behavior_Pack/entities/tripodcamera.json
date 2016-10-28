@@ -1,0 +1,25 @@
+{
+  "minecraft:entity": {
+    "format_version": 0.1,
+
+    "components": {
+      "minecraft:identifier": {
+        "id": "minecraft:tripodcamera"
+      },
+      "minecraft:type_family": {
+        "family": [ "tripodcamera" ]
+      },
+      "minecraft:health": {
+        "value": 4,
+        "max": 4
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/empty.json"
+      },
+      "minecraft:collision_box": {
+        "width": 0.75,
+        "height": 1.8
+      }
+    }
+  }
+}
