@@ -1,22 +1,25 @@
 {
   "header": {
-    "pack_id": "fe9f8597-5454-481a-8730-8d070a8e2e58",
-    "name": "resourcePack.vanilla_server.name",
+    "pack_id": "08578f5d-e643-4241-bed2-96deb57e64a4",
+    "name": "Test Pack",
     "packs_version": "0.0.1",
+    "description": "A test behavior pack by Dallin"
     "modules": [
-      {
-        "description": "resourcePack.vanilla_server.description",
+      { 
+        "description": "behaviorPack.testpack",
         "version": "0.0.1",
-        "uuid": "79fccc3b-7bad-4f4f-aa97-d98108e6aa33",
+        "uuid": "08578f5d-e643-4241-bed2-96deb57e64a4",
         "type": "data"
+        
       }
     ],
     "dependencies": [
-      {
+      { /*
         "description": "resourcePack.vanilla.description",
         "version": "0.0.1",
         "uuid": "53644fac-a276-42e5-843f-a3c6f169a9ab",
         "type": "resources"
+        */
       }
     ]
   }

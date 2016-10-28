@@ -22,14 +22,19 @@
 
       "minecraft:movement": {
         "value": 0.1,
-        "max": 0.1
+        "max": 0.1,
+        "speed_multiplier": 0.2
       },
       "minecraft:health": {
         "value": 6,
         "max": 6
       },
        "minecraft:nameable": {
-	    }
+	    },
+      
+      "minecraft:scale": {
+        "value": 2.0
+      }
     },
 
     "events": {
