@@ -1,0 +1,23 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "type": "object",
+    "title": "Entities",
+    "description": "Schema for entities in Minecraft Add-Ons",
+    "definitions": {
+        "componets" :{
+            "type": "object",
+            "title": "Componets",
+            "description": ""
+        }
+    },
+    "properties": {
+        "minecraft:entity": {
+            "type": "object",
+            "title": "Entity",
+            "description": "Contains all entity data",
+            "properties": {
+                
+            }
+        }
+    }
+}
