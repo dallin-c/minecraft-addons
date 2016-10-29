@@ -1,0 +1,86 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "title": "Pack Manifest Schema",
+  "description": "Schema for pack_manifest.json in Minecraft Add-Ons",
+  "definitions": {
+    "items": {
+        "type": "object",
+        "title": "Items",
+        "description": "Contains items in Modules",
+        "properties": {
+            "description": {
+            "type": "string",
+            "title": "Item Description",
+            "description": "Description of Item"
+          },
+          "version": {
+            "type": "string",
+            "title": "Item Version",
+             "description": "Version of Item"
+          },
+          "uuid": {
+              "type": "string",
+              "title": "Item UUID",
+              "description": "UUID of Item"
+          },
+          "type": {
+              "type": "string",
+              "title": "Item Type",
+              "description": "Type of Item - can be 'resources' or 'data'"
+          }
+      },
+      "required": [
+        "description",
+        "version",
+        "uuid",
+        "type"
+      ]
+    }
+  },
+  "properties": {
+    "header": {
+      "type": "object",
+      "title": "Header",
+      "description": "Contains all items in the pack manifest",
+      "properties": {
+        "pack_id": {
+          "type": "string",
+          "title": "Pack ID",
+          "description": "Pack's UUID (Universally Unique Idenditifaction)"
+        },
+        "name": {
+          "type": "string",
+          "title": "Name",
+          "description": "Pack's Name - will be shown to users"
+        },
+        "packs_version": {
+          "type": "string",
+          "title": "Pack Version",
+          "description": "Version number of pack"
+        },
+        "modules": {
+          "type": "array",
+          "title": "Modules",
+          "description": "Modules within pack",
+          "items": { "$ref": "#/definitions/items" }
+        },
+        "dependencies": {
+          "type": "array",
+          "title": "Dependencies",
+          "description": "Contains items pack is dependent on",
+          "items": { "$ref": "#/definitions/items" }
+        }
+      },
+      "required": [
+        "pack_id",
+        "name",
+        "packs_version",
+        "modules" // possibly not required, not sure
+      ]
+    }
+  },
+  "required": [
+    "header"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "title": "Pack Manifest Schema",
+  "description": "Schema for pack_manifest.json in Minecraft Add-Ons",
+  "definitions": {
+      "terrain_texture": {"$ref": "terrain_texture.json" }
+  },
+  "required": [
+    "terrain_texture",
+    "item_texture",
+    "flipbook_textures"
+  ]
+}
