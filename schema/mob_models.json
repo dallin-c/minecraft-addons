@@ -1,0 +1,124 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "type": "object",
+    "title": "Mob Models Schema",
+    "description": "Schema for mobs.json in Minecraft Add-Ons Resource Packs",
+    "definitions": {
+        "coordinates": {
+            "type": "number",
+            "title": "Coodinates",
+            "description": "3 numbers of Coordinates (x,y,z)"
+        },
+        "bones": {
+            "type": "array",
+            "title": "Bones",
+            "description": "3D models of mobs",
+            "items": {
+                "type": "object",
+                "title": "Bones Contents",
+                "description": "Contains the bones objects",
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "title": "Name",
+                        "description": "Name of bone"
+                    },
+                    "pivot": {
+                        "type": "array",
+                        "title": "Pivot",
+                        "description": "Contains pivot coordinates of bone",
+                        "items": {
+                            "$ref": "#/definitions/coordinates"
+                        }
+                    },
+                    "rotation": {
+                        "type": "array",
+                        "title": "Rotation",
+                        "description": "Contains rotation coordinates of bone",
+                        "items": {
+                            "$ref": "#/definitions/coordinates"
+                        }
+                    },
+                    "cubes": {
+                        "type": "array",
+                        "title": "Cubes",
+                        "description": "3D cube of bone",
+                        "items": {
+                            "type": "object",
+                            "title": "Cube",
+                            "description": "Contains cube origin, size, and uv",
+                            "properties": {
+                                "origin": {
+                                    "type": "array",
+                                    "title": "Origin",
+                                    "description": "Origin of cube",
+                                    "items": {
+                                        "$ref": "#/definitions/coordinates"
+                                    }
+                                },
+                                "size": {
+                                    "type": "array",
+                                    "title": "Size",
+                                    "description": "Coordinates of size of cube",
+                                    "items": {
+                                        "$ref": "#/definitions/coordinates"
+                                    }
+                                },
+                                "uv": {
+                                    "type": "array",
+                                    "title": "UV Mapping",
+                                    "description": "UV Mapping of texture onto cube",
+                                    "items": {
+                                        "type": "integer",
+                                        "title": "UV Coordinates",
+                                        "description": "UV coordinates on texture (u,v)=(x,y)"
+                                    }
+                                }
+                            },
+                            "required": [
+                                "origin",
+                                "size",
+                                "uv"
+                            ]
+                        }
+                    }
+                },
+                "required": [
+                    "name",
+                    "pivot",
+                    "rotation"
+                ]
+            }
+        },
+        "mob": {
+            "type": "object",
+            "title": "Mob Model",
+            "description": "3D Model for Mob",
+            "properties": {
+                "texturewidth": {
+                    "type": "integer",
+                    "title": "Texture Width",
+                    "description": "Width of the texture in pixels"
+                },
+                "textureheight": {
+                    "type": "integer",
+                    "title": "Texture Height",
+                    "description": "Height of texture in pixels"
+                },
+                "bones": {
+                    "$ref": "#/definitions/bones"
+                }
+            },
+            "required": [
+                "texturewidth",
+                "textureheight",
+                "bones"
+            ]
+        }
+    },
+    "properties": {
+        "geometry.chicken": {
+            "$ref": "#/definitions/mob"
+        }
+    }
+}
