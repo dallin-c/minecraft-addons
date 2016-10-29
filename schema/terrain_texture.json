@@ -1,47 +1,32 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
-  "title": "Root schema.",
-  "description": "An explanation about the purpose of this instance.",
   "properties": {
     "resource_pack_name": {
-      "type": "string",
-      "title": "Resource_pack_name schema.",
-      "description": "An explanation about the purpose of this instance."
+      "type": "string"
     },
     "texture_name": {
-      "type": "string",
-      "title": "Texture_name schema.",
-      "description": "An explanation about the purpose of this instance."
+      "type": "string"
     },
     "padding": {
-      "type": "integer",
-      "title": "Padding schema.",
-      "description": "An explanation about the purpose of this instance."
+      "type": "integer"
     },
     "num_mip_levels": {
-      "type": "integer",
-      "title": "Num_mip_levels schema.",
-      "description": "An explanation about the purpose of this instance."
+      "type": "integer"
     },
     "texture_data": {
       "type": "object",
-      "title": "Texture_data schema.",
-      "description": "An explanation about the purpose of this instance.",
       "properties": {
         "grass_side": {
           "type": "object",
-          "title": "Grass_side schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "16 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": [
+                  "string",
+                  "object"
+                ]
               }
             }
           },
@@ -51,17 +36,11 @@
         },
         "grass_top": {
           "type": "object",
-          "title": "Grass_top schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "16 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -71,17 +50,11 @@
         },
         "grass_bottom": {
           "type": "object",
-          "title": "Grass_bottom schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "16 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -91,13 +64,9 @@
         },
         "grass_carried_top": {
           "type": "object",
-          "title": "Grass_carried_top schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -106,13 +75,9 @@
         },
         "grass_carried_bottom": {
           "type": "object",
-          "title": "Grass_carried_bottom schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -121,23 +86,15 @@
         },
         "grass_carried": {
           "type": "object",
-          "title": "Grass_carried schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "object",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "properties": {
                 "path": {
-                  "type": "string",
-                  "title": "Path schema.",
-                  "description": "An explanation about the purpose of this instance."
+                  "type": "string"
                 },
                 "overlay_color": {
-                  "type": "string",
-                  "title": "Overlay_color schema.",
-                  "description": "An explanation about the purpose of this instance."
+                  "type": "string"
                 }
               },
               "required": [
@@ -152,17 +109,11 @@
         },
         "stone": {
           "type": "object",
-          "title": "Stone schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "6 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -172,13 +123,9 @@
         },
         "cobblestone": {
           "type": "object",
-          "title": "Cobblestone schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -187,13 +134,9 @@
         },
         "cobblestone_mossy": {
           "type": "object",
-          "title": "Cobblestone_mossy schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -202,17 +145,11 @@
         },
         "cobblestone_wall": {
           "type": "object",
-          "title": "Cobblestone_wall schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "1 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -222,17 +159,11 @@
         },
         "stonebrick": {
           "type": "object",
-          "title": "Stonebrick schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "3 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -242,17 +173,11 @@
         },
         "monster_egg": {
           "type": "object",
-          "title": "Monster_egg schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "5 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -262,13 +187,9 @@
         },
         "bedrock": {
           "type": "object",
-          "title": "Bedrock schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -277,13 +198,9 @@
         },
         "obsidian": {
           "type": "object",
-          "title": "Obsidian schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -292,13 +209,9 @@
         },
         "clay": {
           "type": "object",
-          "title": "Clay schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -307,17 +220,11 @@
         },
         "sand": {
           "type": "object",
-          "title": "Sand schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "1 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -327,17 +234,11 @@
         },
         "sandstone_top": {
           "type": "object",
-          "title": "Sandstone_top schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "2 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -347,17 +248,11 @@
         },
         "sandstone_bottom": {
           "type": "object",
-          "title": "Sandstone_bottom schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "2 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -367,17 +262,11 @@
         },
         "sandstone_side": {
           "type": "object",
-          "title": "Sandstone_side schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "2 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -387,17 +276,11 @@
         },
         "redsandstone_top": {
           "type": "object",
-          "title": "Redsandstone_top schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "2 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -407,17 +290,11 @@
         },
         "redsandstone_bottom": {
           "type": "object",
-          "title": "Redsandstone_bottom schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "2 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -427,17 +304,11 @@
         },
         "redsandstone_side": {
           "type": "object",
-          "title": "Redsandstone_side schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "2 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -447,13 +318,9 @@
         },
         "redsandstone": {
           "type": "object",
-          "title": "Redsandstone schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -462,13 +329,9 @@
         },
         "gravel": {
           "type": "object",
-          "title": "Gravel schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -477,17 +340,11 @@
         },
         "dirt": {
           "type": "object",
-          "title": "Dirt schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "0 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -497,13 +354,9 @@
         },
         "dirt_podzol_top": {
           "type": "object",
-          "title": "Dirt_podzol_top schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -512,13 +365,9 @@
         },
         "dirt_podzol_bottom": {
           "type": "object",
-          "title": "Dirt_podzol_bottom schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -527,13 +376,9 @@
         },
         "dirt_podzol_side": {
           "type": "object",
-          "title": "Dirt_podzol_side schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -542,17 +387,11 @@
         },
         "planks": {
           "type": "object",
-          "title": "Planks schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "5 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -562,13 +401,9 @@
         },
         "sign": {
           "type": "object",
-          "title": "Sign schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -577,13 +412,9 @@
         },
         "wood_oak": {
           "type": "object",
-          "title": "Wood_oak schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -592,13 +423,9 @@
         },
         "wood_spruce": {
           "type": "object",
-          "title": "Wood_spruce schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -607,13 +434,9 @@
         },
         "wood_birch": {
           "type": "object",
-          "title": "Wood_birch schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -622,13 +445,9 @@
         },
         "wood_jungle": {
           "type": "object",
-          "title": "Wood_jungle schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -637,13 +456,9 @@
         },
         "wood_acacia": {
           "type": "object",
-          "title": "Wood_acacia schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -652,13 +467,9 @@
         },
         "wood_big_oak": {
           "type": "object",
-          "title": "Wood_big_oak schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -667,17 +478,11 @@
         },
         "stone_slab_top": {
           "type": "object",
-          "title": "Stone_slab_top schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "7 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -687,17 +492,11 @@
         },
         "stone_slab_bottom": {
           "type": "object",
-          "title": "Stone_slab_bottom schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "7 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -707,17 +506,11 @@
         },
         "stone_slab_side": {
           "type": "object",
-          "title": "Stone_slab_side schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "7 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -727,17 +520,11 @@
         },
         "stone_slab_top_2": {
           "type": "object",
-          "title": "Stone_slab_top_2 schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "1 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -747,17 +534,11 @@
         },
         "stone_slab_bottom_2": {
           "type": "object",
-          "title": "Stone_slab_bottom_2 schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "1 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -767,17 +548,11 @@
         },
         "stone_slab_side_2": {
           "type": "object",
-          "title": "Stone_slab_side_2 schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "1 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -787,17 +562,11 @@
         },
         "stone_slab": {
           "type": "object",
-          "title": "Stone_slab schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "1 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -807,13 +576,9 @@
         },
         "brick": {
           "type": "object",
-          "title": "Brick schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -822,13 +587,9 @@
         },
         "tnt_top": {
           "type": "object",
-          "title": "Tnt_top schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -837,13 +598,9 @@
         },
         "tnt_bottom": {
           "type": "object",
-          "title": "Tnt_bottom schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -852,13 +609,9 @@
         },
         "tnt_side": {
           "type": "object",
-          "title": "Tnt_side schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -867,13 +620,9 @@
         },
         "bookshelf_top": {
           "type": "object",
-          "title": "Bookshelf_top schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -882,13 +631,9 @@
         },
         "bookshelf": {
           "type": "object",
-          "title": "Bookshelf schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -897,13 +642,9 @@
         },
         "web": {
           "type": "object",
-          "title": "Web schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -912,13 +653,9 @@
         },
         "yellow_flower": {
           "type": "object",
-          "title": "Yellow_flower schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -927,17 +664,11 @@
         },
         "red_flower": {
           "type": "object",
-          "title": "Red_flower schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "8 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -947,17 +678,11 @@
         },
         "double_plant_bottom": {
           "type": "object",
-          "title": "Double_plant_bottom schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "5 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -967,17 +692,11 @@
         },
         "double_plant_top": {
           "type": "object",
-          "title": "Double_plant_top schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "5 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -987,17 +706,11 @@
         },
         "double_plant_carried": {
           "type": "object",
-          "title": "Double_plant_carried schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "5 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -1007,17 +720,11 @@
         },
         "sunflower_additional": {
           "type": "object",
-          "title": "Sunflower_additional schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "1 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -1027,17 +734,11 @@
         },
         "sapling": {
           "type": "object",
-          "title": "Sapling schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "5 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -1047,17 +748,11 @@
         },
         "log_top": {
           "type": "object",
-          "title": "Log_top schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "3 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -1067,17 +762,11 @@
         },
         "log_side": {
           "type": "object",
-          "title": "Log_side schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "3 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -1087,17 +776,11 @@
         },
         "log2": {
           "type": "object",
-          "title": "Log2 schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "3 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -1107,17 +790,11 @@
         },
         "log_top2": {
           "type": "object",
-          "title": "Log_top2 schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "1 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -1127,17 +804,11 @@
         },
         "log_side2": {
           "type": "object",
-          "title": "Log_side2 schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "1 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -1147,13 +818,9 @@
         },
         "iron_block": {
           "type": "object",
-          "title": "Iron_block schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -1162,13 +829,9 @@
         },
         "gold_block": {
           "type": "object",
-          "title": "Gold_block schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -1177,13 +840,9 @@
         },
         "diamond_block": {
           "type": "object",
-          "title": "Diamond_block schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -1192,13 +851,9 @@
         },
         "coal_block": {
           "type": "object",
-          "title": "Coal_block schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -1207,13 +862,9 @@
         },
         "lapis_block": {
           "type": "object",
-          "title": "Lapis_block schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -1222,13 +873,9 @@
         },
         "emerald_block": {
           "type": "object",
-          "title": "Emerald_block schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -1237,13 +884,9 @@
         },
         "redstone_block": {
           "type": "object",
-          "title": "Redstone_block schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -1252,17 +895,11 @@
         },
         "quartz_block_top": {
           "type": "object",
-          "title": "Quartz_block_top schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "2 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -1272,17 +909,11 @@
         },
         "quartz_block_bottom": {
           "type": "object",
-          "title": "Quartz_block_bottom schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "2 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -1292,17 +923,11 @@
         },
         "quartz_block_side": {
           "type": "object",
-          "title": "Quartz_block_side schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "2 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -1312,13 +937,9 @@
         },
         "stair_quartz_block_top": {
           "type": "object",
-          "title": "Stair_quartz_block_top schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -1327,13 +948,9 @@
         },
         "stair_quartz_block_bottom": {
           "type": "object",
-          "title": "Stair_quartz_block_bottom schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -1342,13 +959,9 @@
         },
         "stair_quartz_block_side": {
           "type": "object",
-          "title": "Stair_quartz_block_side schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -1357,13 +970,9 @@
         },
         "mushroom_red": {
           "type": "object",
-          "title": "Mushroom_red schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -1372,13 +981,9 @@
         },
         "mushroom_brown": {
           "type": "object",
-          "title": "Mushroom_brown schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -1387,13 +992,9 @@
         },
         "gold_ore": {
           "type": "object",
-          "title": "Gold_ore schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -1402,13 +1003,9 @@
         },
         "iron_ore": {
           "type": "object",
-          "title": "Iron_ore schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -1417,13 +1014,9 @@
         },
         "coal_ore": {
           "type": "object",
-          "title": "Coal_ore schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -1432,13 +1025,9 @@
         },
         "lapis_ore": {
           "type": "object",
-          "title": "Lapis_ore schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -1447,13 +1036,9 @@
         },
         "diamond_ore": {
           "type": "object",
-          "title": "Diamond_ore schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -1462,13 +1047,9 @@
         },
         "redstone_ore": {
           "type": "object",
-          "title": "Redstone_ore schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -1477,13 +1058,9 @@
         },
         "emerald_ore": {
           "type": "object",
-          "title": "Emerald_ore schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -1492,13 +1069,9 @@
         },
         "quartz_ore": {
           "type": "object",
-          "title": "Quartz_ore schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -1507,17 +1080,11 @@
         },
         "tallgrass": {
           "type": "object",
-          "title": "Tallgrass schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "3 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -1527,17 +1094,11 @@
         },
         "tallgrass_carried": {
           "type": "object",
-          "title": "Tallgrass_carried schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "3 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -1547,13 +1108,9 @@
         },
         "deadbush": {
           "type": "object",
-          "title": "Deadbush schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -1562,13 +1119,9 @@
         },
         "crafting_table_top": {
           "type": "object",
-          "title": "Crafting_table_top schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -1577,13 +1130,9 @@
         },
         "crafting_table_bottom": {
           "type": "object",
-          "title": "Crafting_table_bottom schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -1592,13 +1141,9 @@
         },
         "crafting_table_side": {
           "type": "object",
-          "title": "Crafting_table_side schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -1607,13 +1152,9 @@
         },
         "crafting_table_front": {
           "type": "object",
-          "title": "Crafting_table_front schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -1622,17 +1163,11 @@
         },
         "furnace": {
           "type": "object",
-          "title": "Furnace schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "3 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -1642,17 +1177,11 @@
         },
         "furnace_front": {
           "type": "object",
-          "title": "Furnace_front schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "1 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -1662,13 +1191,9 @@
         },
         "furnace_front_off": {
           "type": "object",
-          "title": "Furnace_front_off schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -1677,13 +1202,9 @@
         },
         "furnace_front_on": {
           "type": "object",
-          "title": "Furnace_front_on schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -1692,17 +1213,11 @@
         },
         "furnace_top": {
           "type": "object",
-          "title": "Furnace_top schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "1 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -1712,17 +1227,11 @@
         },
         "furnace_side": {
           "type": "object",
-          "title": "Furnace_side schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "1 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -1732,17 +1241,11 @@
         },
         "stonecutter_top": {
           "type": "object",
-          "title": "Stonecutter_top schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "0 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -1752,17 +1255,11 @@
         },
         "stonecutter_bottom": {
           "type": "object",
-          "title": "Stonecutter_bottom schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "0 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -1772,17 +1269,11 @@
         },
         "stonecutter_side": {
           "type": "object",
-          "title": "Stonecutter_side schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "0 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -1792,17 +1283,11 @@
         },
         "stonecutter_other_side": {
           "type": "object",
-          "title": "Stonecutter_other_side schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "0 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -1812,17 +1297,11 @@
         },
         "sponge": {
           "type": "object",
-          "title": "Sponge schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "1 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -1832,13 +1311,9 @@
         },
         "glass": {
           "type": "object",
-          "title": "Glass schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -1847,13 +1322,9 @@
         },
         "glass_pane_top": {
           "type": "object",
-          "title": "Glass_pane_top schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -1862,17 +1333,11 @@
         },
         "leaves": {
           "type": "object",
-          "title": "Leaves schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "7 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -1882,17 +1347,11 @@
         },
         "leaves_carried": {
           "type": "object",
-          "title": "Leaves_carried schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "7 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -1902,17 +1361,11 @@
         },
         "leaves2": {
           "type": "object",
-          "title": "Leaves2 schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "3 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -1922,17 +1375,11 @@
         },
         "leaves_carried2": {
           "type": "object",
-          "title": "Leaves_carried2 schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "3 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -1942,13 +1389,9 @@
         },
         "mob_spawner": {
           "type": "object",
-          "title": "Mob_spawner schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -1957,13 +1400,9 @@
         },
         "snow": {
           "type": "object",
-          "title": "Snow schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -1972,13 +1411,9 @@
         },
         "ice": {
           "type": "object",
-          "title": "Ice schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -1987,13 +1422,9 @@
         },
         "ice_packed": {
           "type": "object",
-          "title": "Ice_packed schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -2002,13 +1433,9 @@
         },
         "cactus_top": {
           "type": "object",
-          "title": "Cactus_top schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -2017,13 +1444,9 @@
         },
         "cactus_side": {
           "type": "object",
-          "title": "Cactus_side schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -2032,13 +1455,9 @@
         },
         "cactus_bottom": {
           "type": "object",
-          "title": "Cactus_bottom schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -2047,13 +1466,9 @@
         },
         "reeds": {
           "type": "object",
-          "title": "Reeds schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -2062,13 +1477,9 @@
         },
         "jukebox_side": {
           "type": "object",
-          "title": "Jukebox_side schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -2077,13 +1488,9 @@
         },
         "jukebox_top": {
           "type": "object",
-          "title": "Jukebox_top schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -2092,13 +1499,9 @@
         },
         "waterlily": {
           "type": "object",
-          "title": "Waterlily schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -2107,13 +1510,9 @@
         },
         "waterlily_carried": {
           "type": "object",
-          "title": "Waterlily_carried schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -2122,17 +1521,11 @@
         },
         "mycelium_top": {
           "type": "object",
-          "title": "Mycelium_top schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "1 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -2142,17 +1535,11 @@
         },
         "mycelium_bottom": {
           "type": "object",
-          "title": "Mycelium_bottom schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "1 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -2162,17 +1549,11 @@
         },
         "mycelium_side": {
           "type": "object",
-          "title": "Mycelium_side schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "1 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -2182,13 +1563,9 @@
         },
         "torch_on": {
           "type": "object",
-          "title": "Torch_on schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -2197,13 +1574,9 @@
         },
         "redstone_torch_on": {
           "type": "object",
-          "title": "Redstone_torch_on schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -2212,13 +1585,9 @@
         },
         "redstone_torch_off": {
           "type": "object",
-          "title": "Redstone_torch_off schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -2227,17 +1596,11 @@
         },
         "door_lower": {
           "type": "object",
-          "title": "Door_lower schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "6 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -2247,17 +1610,11 @@
         },
         "door_upper": {
           "type": "object",
-          "title": "Door_upper schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "6 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -2267,13 +1624,9 @@
         },
         "ladder": {
           "type": "object",
-          "title": "Ladder schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -2282,13 +1635,9 @@
         },
         "trapdoor": {
           "type": "object",
-          "title": "Trapdoor schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -2297,13 +1646,9 @@
         },
         "iron_trapdoor": {
           "type": "object",
-          "title": "Iron_trapdoor schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -2312,13 +1657,9 @@
         },
         "iron_bars": {
           "type": "object",
-          "title": "Iron_bars schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -2327,13 +1668,9 @@
         },
         "iron_bars_edge": {
           "type": "object",
-          "title": "Iron_bars_edge schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -2342,17 +1679,11 @@
         },
         "farmland": {
           "type": "object",
-          "title": "Farmland schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "1 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -2362,17 +1693,11 @@
         },
         "wheat": {
           "type": "object",
-          "title": "Wheat schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "7 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -2382,17 +1707,11 @@
         },
         "grass_path_top": {
           "type": "object",
-          "title": "Grass_path_top schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "0 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -2402,17 +1721,11 @@
         },
         "grass_path_side": {
           "type": "object",
-          "title": "Grass_path_side schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "0 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -2422,13 +1735,9 @@
         },
         "lever": {
           "type": "object",
-          "title": "Lever schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -2437,13 +1746,9 @@
         },
         "lever_particle": {
           "type": "object",
-          "title": "Lever_particle schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -2452,17 +1757,11 @@
         },
         "pumpkin_top": {
           "type": "object",
-          "title": "Pumpkin_top schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "1 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -2472,17 +1771,11 @@
         },
         "pumpkin_side": {
           "type": "object",
-          "title": "Pumpkin_side schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "1 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -2492,17 +1785,11 @@
         },
         "pumpkin_face": {
           "type": "object",
-          "title": "Pumpkin_face schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "1 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -2512,13 +1799,9 @@
         },
         "netherrack": {
           "type": "object",
-          "title": "Netherrack schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -2527,13 +1810,9 @@
         },
         "nether_brick": {
           "type": "object",
-          "title": "Nether_brick schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -2542,17 +1821,11 @@
         },
         "nether_wart": {
           "type": "object",
-          "title": "Nether_wart schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "3 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -2562,13 +1835,9 @@
         },
         "soul_sand": {
           "type": "object",
-          "title": "Soul_sand schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -2577,13 +1846,9 @@
         },
         "skull": {
           "type": "object",
-          "title": "Skull schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -2592,13 +1857,9 @@
         },
         "glowstone": {
           "type": "object",
-          "title": "Glowstone schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -2607,17 +1868,11 @@
         },
         "piston_top": {
           "type": "object",
-          "title": "Piston_top schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "0 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -2627,17 +1882,11 @@
         },
         "piston_top_sticky": {
           "type": "object",
-          "title": "Piston_top_sticky schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "0 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -2647,17 +1896,11 @@
         },
         "piston_top_normal": {
           "type": "object",
-          "title": "Piston_top_normal schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "0 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -2667,17 +1910,11 @@
         },
         "piston_side": {
           "type": "object",
-          "title": "Piston_side schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "0 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -2687,17 +1924,11 @@
         },
         "piston_bottom": {
           "type": "object",
-          "title": "Piston_bottom schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "0 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -2707,17 +1938,11 @@
         },
         "observer_north": {
           "type": "object",
-          "title": "Observer_north schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "0 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -2727,17 +1952,11 @@
         },
         "observer_south": {
           "type": "object",
-          "title": "Observer_south schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "0 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -2747,17 +1966,11 @@
         },
         "observer_east": {
           "type": "object",
-          "title": "Observer_east schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "0 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -2767,17 +1980,11 @@
         },
         "observer_west": {
           "type": "object",
-          "title": "Observer_west schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "0 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -2787,17 +1994,11 @@
         },
         "observer_top": {
           "type": "object",
-          "title": "Observer_top schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "0 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -2807,17 +2008,11 @@
         },
         "observer_bottom": {
           "type": "object",
-          "title": "Observer_bottom schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "0 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -2827,13 +2022,9 @@
         },
         "melon_top": {
           "type": "object",
-          "title": "Melon_top schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -2842,13 +2033,9 @@
         },
         "melon_side": {
           "type": "object",
-          "title": "Melon_side schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -2857,17 +2044,11 @@
         },
         "melon_stem": {
           "type": "object",
-          "title": "Melon_stem schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "1 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -2877,17 +2058,11 @@
         },
         "pumpkin_stem": {
           "type": "object",
-          "title": "Pumpkin_stem schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "1 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -2897,13 +2072,9 @@
         },
         "rail_normal": {
           "type": "object",
-          "title": "Rail_normal schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -2912,13 +2083,9 @@
         },
         "rail_normal_turned": {
           "type": "object",
-          "title": "Rail_normal_turned schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -2927,13 +2094,9 @@
         },
         "rail_golden": {
           "type": "object",
-          "title": "Rail_golden schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -2942,13 +2105,9 @@
         },
         "rail_golden_powered": {
           "type": "object",
-          "title": "Rail_golden_powered schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -2957,13 +2116,9 @@
         },
         "rail_detector": {
           "type": "object",
-          "title": "Rail_detector schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -2972,13 +2127,9 @@
         },
         "rail_detector_powered": {
           "type": "object",
-          "title": "Rail_detector_powered schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -2987,13 +2138,9 @@
         },
         "rail_activator": {
           "type": "object",
-          "title": "Rail_activator schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -3002,13 +2149,9 @@
         },
         "rail_activator_powered": {
           "type": "object",
-          "title": "Rail_activator_powered schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -3017,17 +2160,11 @@
         },
         "bed_top": {
           "type": "object",
-          "title": "Bed_top schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "1 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -3037,17 +2174,11 @@
         },
         "bed_bottom": {
           "type": "object",
-          "title": "Bed_bottom schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "1 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -3057,17 +2188,11 @@
         },
         "bed_north": {
           "type": "object",
-          "title": "Bed_north schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "1 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -3077,17 +2202,11 @@
         },
         "bed_south": {
           "type": "object",
-          "title": "Bed_south schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "1 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -3097,17 +2216,11 @@
         },
         "bed_west": {
           "type": "object",
-          "title": "Bed_west schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "1 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -3117,17 +2230,11 @@
         },
         "bed_east": {
           "type": "object",
-          "title": "Bed_east schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "1 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -3137,13 +2244,9 @@
         },
         "cauldron_top": {
           "type": "object",
-          "title": "Cauldron_top schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -3152,13 +2255,9 @@
         },
         "cauldron_inner": {
           "type": "object",
-          "title": "Cauldron_inner schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -3167,13 +2266,9 @@
         },
         "cauldron_side": {
           "type": "object",
-          "title": "Cauldron_side schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -3182,13 +2277,9 @@
         },
         "cauldron_bottom": {
           "type": "object",
-          "title": "Cauldron_bottom schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -3197,13 +2288,9 @@
         },
         "brewing_stand_base": {
           "type": "object",
-          "title": "Brewing_stand_base schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -3212,13 +2299,9 @@
         },
         "brewing_stand": {
           "type": "object",
-          "title": "Brewing_stand schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -3227,17 +2310,11 @@
         },
         "cake_top": {
           "type": "object",
-          "title": "Cake_top schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "1 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -3247,17 +2324,11 @@
         },
         "cake_bottom": {
           "type": "object",
-          "title": "Cake_bottom schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "1 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -3267,17 +2338,11 @@
         },
         "cake_west": {
           "type": "object",
-          "title": "Cake_west schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "1 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -3287,17 +2352,11 @@
         },
         "cake_side": {
           "type": "object",
-          "title": "Cake_side schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "1 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -3307,17 +2366,11 @@
         },
         "mushroom_block": {
           "type": "object",
-          "title": "Mushroom_block schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "3 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -3327,17 +2380,11 @@
         },
         "mushroom_red_top": {
           "type": "object",
-          "title": "Mushroom_red_top schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "15 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -3347,17 +2394,11 @@
         },
         "mushroom_red_bottom": {
           "type": "object",
-          "title": "Mushroom_red_bottom schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "15 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -3367,17 +2408,11 @@
         },
         "mushroom_red_north": {
           "type": "object",
-          "title": "Mushroom_red_north schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "15 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -3387,17 +2422,11 @@
         },
         "mushroom_red_south": {
           "type": "object",
-          "title": "Mushroom_red_south schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "15 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -3407,17 +2436,11 @@
         },
         "mushroom_red_west": {
           "type": "object",
-          "title": "Mushroom_red_west schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "15 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -3427,17 +2450,11 @@
         },
         "mushroom_red_east": {
           "type": "object",
-          "title": "Mushroom_red_east schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "15 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -3447,17 +2464,11 @@
         },
         "mushroom_brown_top": {
           "type": "object",
-          "title": "Mushroom_brown_top schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "15 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -3467,17 +2478,11 @@
         },
         "mushroom_brown_bottom": {
           "type": "object",
-          "title": "Mushroom_brown_bottom schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "15 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -3487,17 +2492,11 @@
         },
         "mushroom_brown_north": {
           "type": "object",
-          "title": "Mushroom_brown_north schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "15 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -3507,17 +2506,11 @@
         },
         "mushroom_brown_south": {
           "type": "object",
-          "title": "Mushroom_brown_south schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "15 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -3527,17 +2520,11 @@
         },
         "mushroom_brown_west": {
           "type": "object",
-          "title": "Mushroom_brown_west schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "15 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -3547,17 +2534,11 @@
         },
         "mushroom_brown_east": {
           "type": "object",
-          "title": "Mushroom_brown_east schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "15 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -3567,13 +2548,9 @@
         },
         "vine": {
           "type": "object",
-          "title": "Vine schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -3582,13 +2559,9 @@
         },
         "vine_carried": {
           "type": "object",
-          "title": "Vine_carried schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -3597,17 +2570,11 @@
         },
         "repeater_torch": {
           "type": "object",
-          "title": "Repeater_torch schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "1 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -3617,17 +2584,11 @@
         },
         "repeater_up": {
           "type": "object",
-          "title": "Repeater_up schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "1 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -3637,17 +2598,11 @@
         },
         "repeater_floor": {
           "type": "object",
-          "title": "Repeater_floor schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "1 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -3657,13 +2612,9 @@
         },
         "end_stone": {
           "type": "object",
-          "title": "End_stone schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -3672,13 +2623,9 @@
         },
         "endframe_top": {
           "type": "object",
-          "title": "Endframe_top schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -3687,13 +2634,9 @@
         },
         "endframe_bottom": {
           "type": "object",
-          "title": "Endframe_bottom schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -3702,13 +2645,9 @@
         },
         "endframe_side": {
           "type": "object",
-          "title": "Endframe_side schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -3717,13 +2656,9 @@
         },
         "endframe_eye": {
           "type": "object",
-          "title": "Endframe_eye schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -3732,13 +2667,9 @@
         },
         "redstone_dust_cross": {
           "type": "object",
-          "title": "Redstone_dust_cross schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -3747,13 +2678,9 @@
         },
         "redstone_dust_line": {
           "type": "object",
-          "title": "Redstone_dust_line schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -3762,13 +2689,9 @@
         },
         "redstone_lamp_off": {
           "type": "object",
-          "title": "Redstone_lamp_off schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -3777,13 +2700,9 @@
         },
         "redstone_lamp_on": {
           "type": "object",
-          "title": "Redstone_lamp_on schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -3792,13 +2711,9 @@
         },
         "enchanting_table_bottom": {
           "type": "object",
-          "title": "Enchanting_table_bottom schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -3807,13 +2722,9 @@
         },
         "enchanting_table_side": {
           "type": "object",
-          "title": "Enchanting_table_side schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -3822,13 +2733,9 @@
         },
         "enchanting_table_top": {
           "type": "object",
-          "title": "Enchanting_table_top schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -3837,13 +2744,9 @@
         },
         "dragon_egg": {
           "type": "object",
-          "title": "Dragon_egg schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -3852,13 +2755,9 @@
         },
         "hayblock_top": {
           "type": "object",
-          "title": "Hayblock_top schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -3867,13 +2766,9 @@
         },
         "hayblock_side": {
           "type": "object",
-          "title": "Hayblock_side schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -3882,17 +2777,11 @@
         },
         "cocoa": {
           "type": "object",
-          "title": "Cocoa schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "2 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -3902,13 +2791,9 @@
         },
         "trip_wire": {
           "type": "object",
-          "title": "Trip_wire schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -3917,13 +2802,9 @@
         },
         "trip_wire_source": {
           "type": "object",
-          "title": "Trip_wire_source schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -3932,13 +2813,9 @@
         },
         "trip_wire_base": {
           "type": "object",
-          "title": "Trip_wire_base schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -3947,13 +2824,9 @@
         },
         "command_block": {
           "type": "object",
-          "title": "Command_block schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -3962,13 +2835,9 @@
         },
         "itemframe_background": {
           "type": "object",
-          "title": "Itemframe_background schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -3977,13 +2846,9 @@
         },
         "flower_pot": {
           "type": "object",
-          "title": "Flower_pot schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -3992,17 +2857,11 @@
         },
         "carrots": {
           "type": "object",
-          "title": "Carrots schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "3 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -4012,17 +2871,11 @@
         },
         "potatoes": {
           "type": "object",
-          "title": "Potatoes schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "3 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -4032,17 +2885,11 @@
         },
         "beetroot": {
           "type": "object",
-          "title": "Beetroot schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "3 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -4052,17 +2899,11 @@
         },
         "anvil_base": {
           "type": "object",
-          "title": "Anvil_base schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "3 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -4072,17 +2913,11 @@
         },
         "anvil_top_damaged_x": {
           "type": "object",
-          "title": "Anvil_top_damaged_x schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "3 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -4092,17 +2927,11 @@
         },
         "reactor_core": {
           "type": "object",
-          "title": "Reactor_core schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "2 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -4112,13 +2941,9 @@
         },
         "glowing_obsidian": {
           "type": "object",
-          "title": "Glowing_obsidian schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -4127,17 +2952,11 @@
         },
         "destroy": {
           "type": "object",
-          "title": "Destroy schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "9 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -4147,17 +2966,11 @@
         },
         "chest_inventory": {
           "type": "object",
-          "title": "Chest_inventory schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "2 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -4167,17 +2980,11 @@
         },
         "chest_inventory_top": {
           "type": "object",
-          "title": "Chest_inventory_top schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "0 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -4187,17 +2994,11 @@
         },
         "chest_inventory_side": {
           "type": "object",
-          "title": "Chest_inventory_side schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "0 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -4207,17 +3008,11 @@
         },
         "chest_inventory_front": {
           "type": "object",
-          "title": "Chest_inventory_front schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "0 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -4227,13 +3022,9 @@
         },
         "missing_tile": {
           "type": "object",
-          "title": "Missing_tile schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -4242,18 +3033,12 @@
         },
         "flowing_water": {
           "type": "object",
-          "title": "Flowing_water schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "quad": {
-              "type": "integer",
-              "title": "Quad schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "integer"
             },
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -4263,18 +3048,12 @@
         },
         "flowing_lava": {
           "type": "object",
-          "title": "Flowing_lava schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "quad": {
-              "type": "integer",
-              "title": "Quad schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "integer"
             },
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -4284,17 +3063,11 @@
         },
         "wool": {
           "type": "object",
-          "title": "Wool schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "15 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -4304,13 +3077,9 @@
         },
         "hardened_clay": {
           "type": "object",
-          "title": "Hardened_clay schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -4319,17 +3088,11 @@
         },
         "stained_clay": {
           "type": "object",
-          "title": "Stained_clay schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "15 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -4339,13 +3102,9 @@
         },
         "fire_0": {
           "type": "object",
-          "title": "Fire_0 schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -4354,13 +3113,9 @@
         },
         "fire_1": {
           "type": "object",
-          "title": "Fire_1 schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -4369,13 +3124,9 @@
         },
         "still_water": {
           "type": "object",
-          "title": "Still_water schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -4384,13 +3135,9 @@
         },
         "still_lava": {
           "type": "object",
-          "title": "Still_lava schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -4399,13 +3146,9 @@
         },
         "cauldron_water": {
           "type": "object",
-          "title": "Cauldron_water schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -4414,13 +3157,9 @@
         },
         "portal": {
           "type": "object",
-          "title": "Portal schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -4429,17 +3168,11 @@
         },
         "daylight_detector_side": {
           "type": "object",
-          "title": "Daylight_detector_side schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "1 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -4449,17 +3182,11 @@
         },
         "daylight_detector_top": {
           "type": "object",
-          "title": "Daylight_detector_top schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "1 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -4469,13 +3196,9 @@
         },
         "noteblock": {
           "type": "object",
-          "title": "Noteblock schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -4484,17 +3207,11 @@
         },
         "comparator_up": {
           "type": "object",
-          "title": "Comparator_up schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "1 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -4504,17 +3221,11 @@
         },
         "comparator_torch": {
           "type": "object",
-          "title": "Comparator_torch schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "1 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -4524,13 +3235,9 @@
         },
         "comparator_stone_slab": {
           "type": "object",
-          "title": "Comparator_stone_slab schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -4539,13 +3246,9 @@
         },
         "dispenser_front_horizontal": {
           "type": "object",
-          "title": "Dispenser_front_horizontal schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -4554,13 +3257,9 @@
         },
         "dispenser_front_vertical": {
           "type": "object",
-          "title": "Dispenser_front_vertical schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -4569,13 +3268,9 @@
         },
         "dispenser_top": {
           "type": "object",
-          "title": "Dispenser_top schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -4584,13 +3279,9 @@
         },
         "dispenser_side": {
           "type": "object",
-          "title": "Dispenser_side schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -4599,13 +3290,9 @@
         },
         "dropper_front_horizontal": {
           "type": "object",
-          "title": "Dropper_front_horizontal schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -4614,13 +3301,9 @@
         },
         "dropper_front_vertical": {
           "type": "object",
-          "title": "Dropper_front_vertical schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -4629,13 +3312,9 @@
         },
         "dropper_top": {
           "type": "object",
-          "title": "Dropper_top schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -4644,13 +3323,9 @@
         },
         "dropper_side": {
           "type": "object",
-          "title": "Dropper_side schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -4659,13 +3334,9 @@
         },
         "hopper_inside": {
           "type": "object",
-          "title": "Hopper_inside schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -4674,13 +3345,9 @@
         },
         "hopper_outside": {
           "type": "object",
-          "title": "Hopper_outside schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -4689,13 +3356,9 @@
         },
         "hopper_top": {
           "type": "object",
-          "title": "Hopper_top schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -4704,13 +3367,9 @@
         },
         "slime_block": {
           "type": "object",
-          "title": "Slime_block schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -4719,13 +3378,9 @@
         },
         "camera_top": {
           "type": "object",
-          "title": "Camera_top schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -4734,13 +3389,9 @@
         },
         "camera_side": {
           "type": "object",
-          "title": "Camera_side schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -4749,13 +3400,9 @@
         },
         "camera_front": {
           "type": "object",
-          "title": "Camera_front schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -4764,13 +3411,9 @@
         },
         "camera_back": {
           "type": "object",
-          "title": "Camera_back schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -4779,13 +3422,9 @@
         },
         "border_block": {
           "type": "object",
-          "title": "Border_block schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -4794,13 +3433,9 @@
         },
         "build_allow": {
           "type": "object",
-          "title": "Build_allow schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -4809,13 +3444,9 @@
         },
         "build_deny": {
           "type": "object",
-          "title": "Build_deny schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -4824,17 +3455,11 @@
         },
         "prismarine": {
           "type": "object",
-          "title": "Prismarine schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
               "type": "array",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance.",
               "items": {
-                "type": "string",
-                "title": "2 schema.",
-                "description": "An explanation about the purpose of this instance."
+                "type": "string"
               }
             }
           },
@@ -4844,13 +3469,9 @@
         },
         "sea_lantern": {
           "type": "object",
-          "title": "Sea_lantern schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -4859,13 +3480,9 @@
         },
         "beacon": {
           "type": "object",
-          "title": "Beacon schema.",
-          "description": "An explanation about the purpose of this instance.",
           "properties": {
             "textures": {
-              "type": "string",
-              "title": "Textures schema.",
-              "description": "An explanation about the purpose of this instance."
+              "type": "string"
             }
           },
           "required": [
@@ -4873,288 +3490,7 @@
           ]
         }
       },
-      "required": [
-        "grass_side",
-        "grass_top",
-        "grass_bottom",
-        "grass_carried_top",
-        "grass_carried_bottom",
-        "grass_carried",
-        "stone",
-        "cobblestone",
-        "cobblestone_mossy",
-        "cobblestone_wall",
-        "stonebrick",
-        "monster_egg",
-        "bedrock",
-        "obsidian",
-        "clay",
-        "sand",
-        "sandstone_top",
-        "sandstone_bottom",
-        "sandstone_side",
-        "redsandstone_top",
-        "redsandstone_bottom",
-        "redsandstone_side",
-        "redsandstone",
-        "gravel",
-        "dirt",
-        "dirt_podzol_top",
-        "dirt_podzol_bottom",
-        "dirt_podzol_side",
-        "planks",
-        "sign",
-        "wood_oak",
-        "wood_spruce",
-        "wood_birch",
-        "wood_jungle",
-        "wood_acacia",
-        "wood_big_oak",
-        "stone_slab_top",
-        "stone_slab_bottom",
-        "stone_slab_side",
-        "stone_slab_top_2",
-        "stone_slab_bottom_2",
-        "stone_slab_side_2",
-        "stone_slab",
-        "brick",
-        "tnt_top",
-        "tnt_bottom",
-        "tnt_side",
-        "bookshelf_top",
-        "bookshelf",
-        "web",
-        "yellow_flower",
-        "red_flower",
-        "double_plant_bottom",
-        "double_plant_top",
-        "double_plant_carried",
-        "sunflower_additional",
-        "sapling",
-        "log_top",
-        "log_side",
-        "log2",
-        "log_top2",
-        "log_side2",
-        "iron_block",
-        "gold_block",
-        "diamond_block",
-        "coal_block",
-        "lapis_block",
-        "emerald_block",
-        "redstone_block",
-        "quartz_block_top",
-        "quartz_block_bottom",
-        "quartz_block_side",
-        "stair_quartz_block_top",
-        "stair_quartz_block_bottom",
-        "stair_quartz_block_side",
-        "mushroom_red",
-        "mushroom_brown",
-        "gold_ore",
-        "iron_ore",
-        "coal_ore",
-        "lapis_ore",
-        "diamond_ore",
-        "redstone_ore",
-        "emerald_ore",
-        "quartz_ore",
-        "tallgrass",
-        "tallgrass_carried",
-        "deadbush",
-        "crafting_table_top",
-        "crafting_table_bottom",
-        "crafting_table_side",
-        "crafting_table_front",
-        "furnace",
-        "furnace_front",
-        "furnace_front_off",
-        "furnace_front_on",
-        "furnace_top",
-        "furnace_side",
-        "stonecutter_top",
-        "stonecutter_bottom",
-        "stonecutter_side",
-        "stonecutter_other_side",
-        "sponge",
-        "glass",
-        "glass_pane_top",
-        "leaves",
-        "leaves_carried",
-        "leaves2",
-        "leaves_carried2",
-        "mob_spawner",
-        "snow",
-        "ice",
-        "ice_packed",
-        "cactus_top",
-        "cactus_side",
-        "cactus_bottom",
-        "reeds",
-        "jukebox_side",
-        "jukebox_top",
-        "waterlily",
-        "waterlily_carried",
-        "mycelium_top",
-        "mycelium_bottom",
-        "mycelium_side",
-        "torch_on",
-        "redstone_torch_on",
-        "redstone_torch_off",
-        "door_lower",
-        "door_upper",
-        "ladder",
-        "trapdoor",
-        "iron_trapdoor",
-        "iron_bars",
-        "iron_bars_edge",
-        "farmland",
-        "wheat",
-        "grass_path_top",
-        "grass_path_side",
-        "lever",
-        "lever_particle",
-        "pumpkin_top",
-        "pumpkin_side",
-        "pumpkin_face",
-        "netherrack",
-        "nether_brick",
-        "nether_wart",
-        "soul_sand",
-        "skull",
-        "glowstone",
-        "piston_top",
-        "piston_top_sticky",
-        "piston_top_normal",
-        "piston_side",
-        "piston_bottom",
-        "observer_north",
-        "observer_south",
-        "observer_east",
-        "observer_west",
-        "observer_top",
-        "observer_bottom",
-        "melon_top",
-        "melon_side",
-        "melon_stem",
-        "pumpkin_stem",
-        "rail_normal",
-        "rail_normal_turned",
-        "rail_golden",
-        "rail_golden_powered",
-        "rail_detector",
-        "rail_detector_powered",
-        "rail_activator",
-        "rail_activator_powered",
-        "bed_top",
-        "bed_bottom",
-        "bed_north",
-        "bed_south",
-        "bed_west",
-        "bed_east",
-        "cauldron_top",
-        "cauldron_inner",
-        "cauldron_side",
-        "cauldron_bottom",
-        "brewing_stand_base",
-        "brewing_stand",
-        "cake_top",
-        "cake_bottom",
-        "cake_west",
-        "cake_side",
-        "mushroom_block",
-        "mushroom_red_top",
-        "mushroom_red_bottom",
-        "mushroom_red_north",
-        "mushroom_red_south",
-        "mushroom_red_west",
-        "mushroom_red_east",
-        "mushroom_brown_top",
-        "mushroom_brown_bottom",
-        "mushroom_brown_north",
-        "mushroom_brown_south",
-        "mushroom_brown_west",
-        "mushroom_brown_east",
-        "vine",
-        "vine_carried",
-        "repeater_torch",
-        "repeater_up",
-        "repeater_floor",
-        "end_stone",
-        "endframe_top",
-        "endframe_bottom",
-        "endframe_side",
-        "endframe_eye",
-        "redstone_dust_cross",
-        "redstone_dust_line",
-        "redstone_lamp_off",
-        "redstone_lamp_on",
-        "enchanting_table_bottom",
-        "enchanting_table_side",
-        "enchanting_table_top",
-        "dragon_egg",
-        "hayblock_top",
-        "hayblock_side",
-        "cocoa",
-        "trip_wire",
-        "trip_wire_source",
-        "trip_wire_base",
-        "command_block",
-        "itemframe_background",
-        "flower_pot",
-        "carrots",
-        "potatoes",
-        "beetroot",
-        "anvil_base",
-        "anvil_top_damaged_x",
-        "reactor_core",
-        "glowing_obsidian",
-        "destroy",
-        "chest_inventory",
-        "chest_inventory_top",
-        "chest_inventory_side",
-        "chest_inventory_front",
-        "missing_tile",
-        "flowing_water",
-        "flowing_lava",
-        "wool",
-        "hardened_clay",
-        "stained_clay",
-        "fire_0",
-        "fire_1",
-        "still_water",
-        "still_lava",
-        "cauldron_water",
-        "portal",
-        "daylight_detector_side",
-        "daylight_detector_top",
-        "noteblock",
-        "comparator_up",
-        "comparator_torch",
-        "comparator_stone_slab",
-        "dispenser_front_horizontal",
-        "dispenser_front_vertical",
-        "dispenser_top",
-        "dispenser_side",
-        "dropper_front_horizontal",
-        "dropper_front_vertical",
-        "dropper_top",
-        "dropper_side",
-        "hopper_inside",
-        "hopper_outside",
-        "hopper_top",
-        "slime_block",
-        "camera_top",
-        "camera_side",
-        "camera_front",
-        "camera_back",
-        "border_block",
-        "build_allow",
-        "build_deny",
-        "prismarine",
-        "sea_lantern",
-        "beacon"
-      ]
+      "required": []
     }
   },
   "required": [
