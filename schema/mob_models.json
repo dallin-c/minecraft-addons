@@ -39,6 +39,34 @@
                             "$ref": "#/definitions/coordinates"
                         }
                     },
+                    "inflate": {
+                        "type": "number",
+                        "title": "Inflate",
+                        "description": "Inflation factor of mob",
+                        "items": {
+                            "$ref": "#/definitions/coordinates"
+                        }
+                    },
+                    "material": {
+                        "type": "string",
+                        "title": "Material",
+                        "description": "Unknown/Material of mob?"
+                    },
+                    "parent": {
+                        "type": "string",
+                        "title": "Parent",
+                        "description": "Parent of bone"
+                    },
+                    "reset": {
+                        "type": "boolean",
+                        "title": "Reset?",
+                        "description": "Uknown/reset? boolean"
+                    },
+                    "neverRender": {
+                        "type": "boolean",
+                        "title": "Never Render?",
+                        "description": "Uknown/neverRender? boolean"
+                    },
                     "cubes": {
                         "type": "array",
                         "title": "Cubes",
@@ -85,8 +113,6 @@
                 },
                 "required": [
                     "name",
-                    "pivot",
-                    "rotation"
                 ]
             }
         },
@@ -109,15 +135,11 @@
                     "$ref": "#/definitions/bones"
                 }
             },
-            "required": [
-                "texturewidth",
-                "textureheight",
-                "bones"
-            ]
+            "required": []
         }
     },
-    "properties": {
-        "geometry.chicken": {
+    "patternProperties": {
+        ".*": {
             "$ref": "#/definitions/mob"
         }
     }
