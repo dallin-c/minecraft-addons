@@ -4,7 +4,10 @@
   "title": "Pack Manifest Schema",
   "description": "Schema for pack_manifest.json in Minecraft Add-Ons",
   "definitions": {
-      "terrain_texture": {"$ref": "terrain_texture.json" }
+      "terrain_texture": {"$ref": "terrain_texture.json#" },
+      "item_texture": {"$ref": "item_texture.json#"},
+      "flipbook_textures": {"$ref": "flipbook_textures.json#"},
+      "mob": {"$ref": "mob_models.json#"}
   },
   "required": [
     "terrain_texture",
