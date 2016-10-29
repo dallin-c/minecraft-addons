@@ -4,20 +4,132 @@
     "title": "Entities",
     "description": "Schema for entities in Minecraft Add-Ons",
     "definitions": {
-        "componets" :{
+        "componet_properties": {
+            "minecraft:identifier": {
+                "type": "object",
+                "title": "Minecraft Identifier",
+                "description": "Contains ID of entity",
+                "properties": {
+                    "id": {
+                        "type": "string",
+                        "title": "Minecraft ID",
+                        "description": "ID of entity in 'minercaft:x' format"
+                    }
+                },
+                "required": [
+                    "minecraft:identifier"
+                ]
+            }
+        },
+        "componets": {
             "type": "object",
             "title": "Componets",
-            "description": ""
-        }
-    },
-    "properties": {
-        "minecraft:entity": {
-            "type": "object",
-            "title": "Entity",
-            "description": "Contains all entity data",
+            "description": "Entity componets",
             "properties": {
-                
+                "minecraft:identifier": {
+                    "$ref": "#/definitions/componet_properties"
+                }
+            }, "required": [
+                "minecraft:identifier"
+            ]
+        },
+        "minecraft:collision_box": {
+            "type": "object",
+            "title": "Collision Box",
+            "description": "Entity's collision box",
+            "properties": {
+                "width": {
+                    "type": "number",
+                    "title": "Width",
+                    "description": "Width of collision box"
+                },
+                "height": {
+                    "type": "number",
+                    "title": "Height",
+                    "description": "Height of collision box"
+                }
+            },
+            "required": [
+                "width",
+                "height"
+            ]
+        },
+        "minecraft:projectile": {
+            "type": "object",
+            "title": "Projectile",
+            "description": "Entity projectile data",
+            "properties": {
+                "onHit": {      // TODO: finish this
+                    "type": "object"
+                },
+                "power": {
+                    "type": "number",
+                    "title": "Power",
+                    "description": "Projectile power"
+                },
+                "gravity": {
+                    "type": "number",
+                    "title": "Gravity",
+                    "description": "Gravity applied to projectile"
+                },
+                "uncertaintyBase": {
+                    "type": "integer",      // AFAIK
+                    "title": "Uncertainty Base",
+                    "description": "Unknown/projectile uncertainty base?"
+                },
+                "uncertaintyMultiplier": {
+                    "type": "integer",       // AFAIK
+                    "title": "Uncertainty Multiplier",
+                    "description": "Unkown/projectile uncertainty multiplier?"
+                },
+                "anchor": {
+                    "type": "integer",
+                    "title": "Anchor",
+                    "description": "Unkown/projectile anchor?"
+                },
+                "offset": {
+                    "type": "array",
+                    "title": "Offset",
+                    "description": "Unkown/offest?",
+                    "items": {
+                        "type": "number",
+                        "title": "Offset Numbers",
+                        "description": "Unkown/3 numbers?"
+                    }
+                }
+            },
+            "required": [ // AFAIK these all are required
+                "onHit",
+                "power",
+                "gravity",
+                "uncertaintyBase",
+                "uncertaintyMultiplier",
+                "anchor",
+                "offset"
+            ]
+        },
+        "properties": {
+            "minecraft:entity": {
+                "type": "object",
+                "title": "Entity",
+                "description": "Contains all entity data",
+                "properties": {
+                    "format_version": {
+                        "type": "number",
+                        "title": "Format Version",
+                        "description": "Version of entity format being used"
+                    },
+                    "componets": {
+                        "$ref": "#/definitions/componets"
+                    }
+                },
+                "required": [
+                    "format_version",
+                    "componets"
+                ]
             }
-        }
+        },
+        "required": [
+            "minecraft:entity"
+        ]
     }
-}
