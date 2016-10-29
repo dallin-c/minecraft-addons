@@ -6,8 +6,7 @@
   "definitions": {
       "terrain_texture": {"$ref": "terrain_texture.json#" },
       "item_texture": {"$ref": "item_texture.json#"},
-      "flipbook_textures": {"$ref": "flipbook_textures.json#"},
-      "mob": {"$ref": "mob_models.json#"}
+      "flipbook_textures": {"$ref": "flipbook_textures.json#"}
   },
   "required": [
     "terrain_texture",
