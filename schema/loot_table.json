@@ -3,73 +3,106 @@
     "type": "object",
     "title": "Loot Table",
     "description": "Schema for loot tables in Minecraf Add-Ons",
-    "properties": {
+    "definitions": {
+        "conditions": {
+            "type": "array",
+            "title": "Conditions",
+            "description": "Types of conditions that cause loot tables to activate",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "condition": {
+                        "type": "string",
+                        "title": "Condition",
+                        "description": "Condition that triggers loot"
+                    },
+                    "default_chance": {
+                        "type": "number",
+                        "title": "Default Chance",
+                        "description": "Chance of loot in default difficulty"
+                    },
+                    "peaceful": {
+                        "type": "number",
+                        "title": "Peaceful Chance",
+                        "description": "Chance of loot in peaceful difficulty"
+                    },
+                    "hard": {
+                        "type": "number",
+                        "title": "Hard Chance",
+                        "description": "Chance of loot in hard difficulty"
+                    }
+                },
+                "required": [
+                    "condition",
+                    "default_chance",
+                    "peaceful",
+                    "hard"
+                ]
+            }
+        },
+        "rolls": {
+            "type": [
+                "array",
+                "integer"
+            ],
+            "title": "Rolls",
+            "description": "Unkown/either one number or array of 'min' and 'max'"
+        },
         "pools": {
             "type": "array",
             "title": "Pools",
-            "description": "Contains all loot table information",
             "items": {
                 "type": "object",
-                "title": "Pool Object",
-                "description": "Contains all loot table information within Pool array",
                 "properties": {
                     "rolls": {
-                        "type": ["integer", "object"],
-                        "title": "Rolls",
-                        "description": "Rolls/Unkown what exactly, can either be integer or min and max values"
+                        "$ref": "#/definitions/rolls"
                     },
                     "entries": {
                         "type": "array",
-                        "title": "Entries",
-                        "description": "Contains all of the entries for the loot tables",
                         "items": {
                             "type": "object",
-                            "title": "Entries Items",
-                            "description": "Contains all of the items within the Entries",
                             "properties": {
                                 "type": {
                                     "type": "string",
                                     "title": "Type",
-                                    "description": "Type of thing dropped. Usually item"
+                                    "description": "Type of loot"
                                 },
                                 "name": {
                                     "type": "string",
-                                    "title": "Name schema.",
-                                    "description": "An explanation about the purpose of this instance."
+                                    "title": "Name",
+                                    "description": "Name of loot in 'minecraft:x' format"
                                 },
                                 "weight": {
                                     "type": "integer",
-                                    "title": "Weight schema.",
-                                    "description": "An explanation about the purpose of this instance."
+                                    "title": "Weight",
+                                    "description": "Weight of loot"
+                                },
+                                "pools": {
+                                    "$ref": "#/definitions/pools"
                                 },
                                 "functions": {
                                     "type": "array",
-                                    "title": "Functions schema.",
-                                    "description": "An explanation about the purpose of this instance.",
+                                    "title": "Functions",
+                                    "description": "Holds functions for loot",
                                     "items": {
                                         "type": "object",
-                                        "title": "1 schema.",
-                                        "description": "An explanation about the purpose of this instance.",
                                         "properties": {
                                             "function": {
                                                 "type": "string",
-                                                "title": "Function schema.",
-                                                "description": "An explanation about the purpose of this instance."
+                                                "title": "Function",
+                                                "description": "Name of function used"
                                             },
                                             "count": {
                                                 "type": "object",
-                                                "title": "Count schema.",
-                                                "description": "An explanation about the purpose of this instance.",
+                                                "title": "Count",
                                                 "properties": {
                                                     "min": {
                                                         "type": "integer",
-                                                        "title": "Min schema.",
-                                                        "description": "An explanation about the purpose of this instance."
+                                                        "title": "Minimum"
                                                     },
                                                     "max": {
                                                         "type": "integer",
-                                                        "title": "Max schema.",
-                                                        "description": "An explanation about the purpose of this instance."
+                                                        "title": "Maximum"
                                                     }
                                                 },
                                                 "required": [
@@ -87,21 +120,23 @@
                             },
                             "required": [
                                 "type",
-                                "name",
-                                "weight",
-                                "functions"
+                                "name"
                             ]
                         }
                     }
                 },
+                "conditions": {
+                    "$ref": "#/definitions/conditions"
+                },
                 "required": [
-                    "rolls",
-                    "entries"
+                    "rolls"
                 ]
             }
         }
     },
-    "required": [
-        "pools"
-    ]
+    "properties": {
+        "pools": {
+            "$ref": "#/definitions/pools"
+        }
+    }
 }
