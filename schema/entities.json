@@ -4,7 +4,7 @@
     "title": "Entities",
     "description": "Schema for entities in Minecraft Add-Ons",
     "definitions": {
-        "componet_properties": {
+        "component_properties": {
             "minecraft:identifier": {
                 "type": "object",
                 "title": "Minecraft Identifier",
@@ -16,22 +16,10 @@
                         "description": "ID of entity in 'minercaft:x' format"
                     }
                 },
-                "required": [
-                    "minecraft:identifier"
+                "required": [ // Not working?!!!
+                    "id"
                 ]
             }
-        },
-        "componets": {
-            "type": "object",
-            "title": "Componets",
-            "description": "Entity componets",
-            "properties": {
-                "minecraft:identifier": {
-                    "$ref": "#/definitions/componet_properties"
-                }
-            }, "required": [
-                "minecraft:identifier"
-            ]
         },
         "minecraft:collision_box": {
             "type": "object",
@@ -59,8 +47,64 @@
             "title": "Projectile",
             "description": "Entity projectile data",
             "properties": {
-                "onHit": {      // TODO: finish this
-                    "type": "object"
+                "onHit": { // TODO: finish this
+                    "type": "object",
+                    "title": "OnHit Event",
+                    "description": "What happens on projectile hit (event)",
+                    "properties": {
+                        "impact_damage": {
+                            "type": "object",
+                            "title": "Impact Damage",
+                            "description": "Damage of projectile on impact",
+                            "properties": {
+                                "damage": {
+                                    "type": "integer",
+                                    "title": "Damage",
+                                    "description": "Amount of damage projectile delivers"
+                                },
+                                "knockback": {
+                                    "type": "boolean",
+                                    "title": "Knockback",
+                                    "description": "Whether or not projectile delivers knockback"
+                                },
+                                "semirandomdiffdamage": {
+                                    "type": "boolean",
+                                    "title": "Semi-Random Diff Damage",
+                                    "description": "Unkown/whether or not projectile's damage is semi-random?"
+                                },
+                                "shouldbounce": {
+                                    "type": "boolean",
+                                    "title": "Should Bounce",
+                                    "description": "Whether or not projectile should bounce off target"
+                                },
+                                "destroyonhit": {
+                                    "type": "boolean",
+                                    "title": "Destroy On Hit",
+                                    "description": "Whether or not projectile is destroyed on hit"
+                                }
+                            },
+                            "required": [ // AFAIK
+                                "damage",
+                                "knockback",
+                                "semirandomdiffdamage",
+                                "shouldbounce",
+                                "destroyonhit"
+                            ]
+                        },
+                        "stick_in_ground": {
+                            "type": "object",
+                            "title": "Stick in Ground",
+                            "description": "Unkown/projectile gets stuck in ground?"
+                        },
+                        "arrow_effect": {
+                            "type": "object",
+                            "title": "Arrow Effect",
+                            "description": "Unkown/applies arrow effect to projectile?"
+                        }
+                    },
+                    "required": [ // AFAIK
+                        "impact_damage"
+                    ]
                 },
                 "power": {
                     "type": "number",
@@ -73,12 +117,12 @@
                     "description": "Gravity applied to projectile"
                 },
                 "uncertaintyBase": {
-                    "type": "integer",      // AFAIK
+                    "type": "integer", // AFAIK
                     "title": "Uncertainty Base",
                     "description": "Unknown/projectile uncertainty base?"
                 },
                 "uncertaintyMultiplier": {
-                    "type": "integer",       // AFAIK
+                    "type": "integer", // AFAIK
                     "title": "Uncertainty Multiplier",
                     "description": "Unkown/projectile uncertainty multiplier?"
                 },
@@ -108,28 +152,48 @@
                 "offset"
             ]
         },
-        "properties": {
-            "minecraft:entity": {
-                "type": "object",
-                "title": "Entity",
-                "description": "Contains all entity data",
-                "properties": {
-                    "format_version": {
-                        "type": "number",
-                        "title": "Format Version",
-                        "description": "Version of entity format being used"
-                    },
-                    "componets": {
-                        "$ref": "#/definitions/componets"
-                    }
+        "components": {
+            "type": "object",
+            "title": "Components",
+            "description": "Entity components",
+            "properties": {
+                "minecraft:identifier": {
+                    "$ref": "#/definitions/component_properties"
                 },
-                "required": [
-                    "format_version",
-                    "componets"
-                ]
-            }
-        },
-        "required": [
-            "minecraft:entity"
-        ]
-    }
+                "minecraft:collision_box": {
+                    "$ref": "#/definitions/minecraft:collision_box"
+                },
+                "minecraft:projectile": {
+                    "$ref": "#/definitions/minecraft:projectile"
+                }
+            },
+            "required": [ // AFAIK
+                "minecraft:identifier"
+            ]
+        }
+    },
+    "properties": {
+        "minecraft:entity": {
+            "type": "object",
+            "title": "Entity",
+            "description": "Contains all entity data",
+            "properties": {
+                "format_version": {
+                    "type": "number",
+                    "title": "Format Version",
+                    "description": "Version of entity format being used"
+                },
+                "components": {
+                    "$ref": "#/definitions/components"
+                }
+            },
+            "required": [
+                "format_version",
+                "components"
+            ]
+        }
+    },
+    "required": [
+        "minecraft:entity"
+    ]
+}
