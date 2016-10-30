@@ -26,6 +26,36 @@
                 ]
             }
         },
+        "minecraft:loot": {
+            "type": "object",
+            "title": "Loot",
+            "description": "Contains path to entity's loot table",
+            "properties": {
+                "table": {
+                    "type": "string",
+                    "title": "Table",
+                    "description": "Path to entity's loot table"
+                }
+            },
+            "required": [
+                "table"
+            ]
+        },
+        "minecraft:attack": {
+            "type": "object",
+            "title": "Attack",
+            "description": "Containts informatino about entity's attack",
+            "properties": {
+                "damage": {
+                    "type": "integer",
+                    "title": "Damage",
+                    "description": "Amount of damage attack deals"
+                }
+            },
+            "required": [
+                "damage"
+            ]
+        },
         "minecraft:type_family": {
             "type": "object",
             "title": "Type of Family",
@@ -42,6 +72,94 @@
             "required": [
                 "family"
             ]
+        },
+        "minecraft:movement": {
+            "type": "object",
+            "title": "Movement",
+            "description": "Entity's Movement",
+            "properties": {
+                "value": {
+                    "type": "number",
+                    "title": "Value",
+                    "description": "Unkown/Movement value?"
+                },
+                "max": {
+                    "type": "number",
+                    "title": "Maximum",
+                    "description": "Unknown/Max movement?"
+                }
+            },
+            "required": [ // AFAIK
+                "value",
+                "max"
+            ]
+        },
+        "minecraft:health": {
+            "type": "object",
+            "title": "Health",
+            "description": "Contains entity's health information",
+            "properties": {
+                "value": {
+                    "type": "integer",
+                    "title": "Health Value",
+                    "description": "Default value of health for entity"
+                },
+                "max": {
+                    "type": "integer",
+                    "title": "Maximum Health",
+                    "description": "Maximum health value for entity"
+                }
+            },
+            "required": [
+                "value",
+                "max"
+            ]
+        },
+        "minecraft:follow_range": {
+            "type": "object",
+            "title": "Follow Range",
+            "description": "Contains information about an entity's follow range",
+            "properties": {
+                "value": {
+                    "type": "integer",
+                    "title": "Range Value",
+                    "description": "Default follow range, presumably in blocks"
+                },
+                "max": {
+                    "type": "integer",
+                    "title": "Maximum Range",
+                    "description": "Maximum follow range, presumably in blocks"
+                }
+            },
+            "required": [
+                "max",
+                "value"
+            ]
+        },
+        "minecraft:hurt_when_wet": {
+            "type": "object",
+            "title": "Hurt When Wet",
+            "description": "Contains whether entity is hurt when wet",
+            "properties": {
+                "value": {
+                    "type": "boolean",
+                    "title": "Value",
+                    "description": "Whether or not entity is hurt when it makes contact with water"
+                }
+            },
+            "required": [
+                "value"
+            ]
+        },
+        "minecraft:fire_immune": {
+            "type": "boolean",
+            "title": "Fire Immune",
+            "description": "Whether or not entity is immune to damage by fire"
+        },
+        "minecraft:nameable": {
+            "type": "object",
+            "name": "Nameable",
+            "description": "If exists, entity is able to be named" // AFAIK!
         },
         "minecraft:collision_box": {
             "type": "object",
@@ -188,57 +306,242 @@
                 "offset"
             ]
         },
-        "components": {
+        "minecraft:behavior.nearest_attackable_target": {
             "type": "object",
-            "title": "Components",
-            "description": "Entity components",
+            "title": "Behavior - Nearest Attackable Target",
+            "description": "Contains information about this behavior",
             "properties": {
-                "minecraft:identifier": {
-                    "$ref": "#/definitions/component_properties"
+                "priority": {
+                    "type": "integer",
+                    "title": "Priority",
+                    "description": "Priority of behavior"
                 },
-                "minecraft:type_family": {
-                    "$ref": "#/definitions/minecraft:type_family"
-                },
-                "minecraft:fall_damage": {
-                    "$ref": "#/definitions/minecraft:fall_damage"
-                },
-                "minecraft:collision_box": {
-                    "$ref": "#/definitions/minecraft:collision_box"
-                },
-                "minecraft:projectile": {
-                    "$ref": "#/definitions/minecraft:projectile"
-                }
-            },
-            "required": [ // AFAIK
-                "minecraft:identifier"
-            ]
-        }
-    },
-    "properties": {
-        "minecraft:entity": {
-            "type": "object",
-            "title": "Entity",
-            "description": "Contains all entity data",
-            "properties": {
-                "format_version": {
-                    "type": "number",
-                    "title": "Format Version",
-                    "description": "Version of entity format being used"
-                },
-                "component_groups": {
-                    "$ref": "#/definitions/component_groups"
-                },
-                "components": {
-                    "$ref": "#/definitions/components"
+                "entity_types": {
+                    "type": "array",
+                    "title": "Entity Types",
+                    "description": "Types of entities this behavior this behavior is applied to",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "filters": {
+                                "type": "object",
+                                "title": "Filters",
+                                "description": "Filters for behavior",
+                                "properties": {
+                                    "other_with_families": {
+                                        "type": "string",
+                                        "title": "Other With Families"
+                                    }
+                                }
+                            },
+                            "max_dist": {
+                                "type": "integer",
+                                "title": "Maximum Distance",
+                                "description": "Maximum distance that the behavior applies to"
+                            }
+                        },
+                        "required": [
+                            "filters",
+                            "max_dist"
+                        ]
+                    }
                 }
             },
             "required": [
-                "format_version",
-                "components"
+                "priority",
+                "entity_types"
+            ]
+        },
+        "minecraft:behavior.melee_attack": {
+            "type": "object",
+            "title": "Behavior - Melee Attack",
+            "description": "Contains information about this behavior",
+            "properties": {
+                "priority": {
+                    "type": "integer",
+                    "title": "Priority",
+                    "description": "Priority of behavior"
+                },
+                "max_dist": {
+                    "type": "integer",
+                    "title": "Maximum Distance",
+                    "description": "Maximum distance that the behavior applies to"
+                },
+                "speed_multiplier": {
+                    "type": "integer",
+                    "title": "Speed Multiplier",
+                    "description": "Speed multiplier for this behavior"
+                },
+                "random_stop_interval": {
+                    "type": "number",
+                    "title": "Random Stop Interval",
+                    "description": "Interval for random stops of this behavior"
+                },
+                "track_target": {
+                    "type": "boolean",
+                    "title": "Track Target",
+                    "description": "Whether or not entity tracks target"
+                }
+            },
+            "required": [
+                "priority",
+                "max_dist",
+                "speed_multiplier",
+                "random_stop_interval",
+                "track_target"
+            ]
+        },
+        "minecraft:shooter": {
+            "type": "object",
+            "title": "Shooter",
+            "description": "Contains information about entity shooting",
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "title": "Type",
+                    "description": "Type of shooter"
+                },
+                "def": {
+                    "type": "string",
+                    "title": "Def",
+                    "description": "What is shot, in 'minecraft:x' format"
+                }
+            },
+            "required": [
+                "type",
+                "def"
+            ]
+        },
+        "minecraft:behavior.ranged_attack": {
+            "type": "object",
+            "title": "Behavior - ranged attack",
+            "description": "Contains information about this behavior",
+            "properties": {
+                "attack_interval_min": {
+                    "type": "integer"
+                },
+                "attack_interval_max": {
+                    "type": "integer"
+                },
+                "charge_charged_trigger": {
+                    "type": "integer"
+                },
+                "charge_shoot_trigger": {
+                    "type": "integer"
+                },
+                "attack_radius": {
+                    "type": "integer"
+                },
+                "burst_shots": {
+                    "type": "integer"
+                },
+                "burst_interval": {
+                    "type": "number"
+                }
+            },
+            "required": [
+                "attack_interval_min",
+                "attack_interval_max",
+                "charge_charged_trigger",
+                "charge_shoot_trigger",
+                "attack_radius",
+                "burst_shots",
+                "burst_interval"
             ]
         }
     },
-    "required": [
-        "minecraft:entity"
-    ]
+    "components": {
+        "type": "object",
+        "title": "Components",
+        "description": "Entity components",
+        "properties": {
+            "minecraft:identifier": {
+                "$ref": "#/definitions/component_properties"
+            },
+            "minecraft:loot": {
+                "$ref": "#/definitions/minecraft:loot"
+            },
+            "minecraft:attack": {
+                "$ref": "#/definitions/minecraft:attack"
+            },
+            "minecraft:type_family": {
+                "$ref": "#/definitions/minecraft:type_family"
+            },
+            "minecraft:fall_damage": {
+                "$ref": "#/definitions/minecraft:fall_damage"
+            },
+            "minecraft:movement": {
+                "$ref": "#/definitions/minecraft:movement"
+            },
+            "minecraft:follow_range": {
+                "$ref": "#/definitions/minecraft:follow_range"
+            },
+            "minecraft:health": {
+                "$ref": "#/definitions/minecraft:health"
+            },
+            "minecraft:hurt_when_wet": {
+                "$ref": "#/definitions/minecraft:hurt_when_wet"
+            },
+            "minecraft:fire_immune": {
+                "$ref": "#/definitions/minecraft:fire_immune"
+            },
+            "minecraft:nameable": {
+                "$ref": "#/definitions/minecraft:nameable"
+            },
+            "minecraft:collision_box": {
+                "$ref": "#/definitions/minecraft:collision_box"
+            },
+            "minecraft:projectile": {
+                "$ref": "#/definitions/minecraft:projectile"
+            },
+            "minecraft:behavior.nearest_attackable_target": {
+                "$ref": "#/definitions/minecraft:behavior.nearest_attackable_target"
+            },
+            "minecraft:behavior.melee_attack": {
+                "$ref": "#/definitions/minecraft:behavior.melee_attack"
+            },
+            "minecraft:shooter": {
+                "$ref": "#/definitions/minecraft:shooter"
+            }
+        },
+        "required": [ // AFAIK
+            "minecraft:identifier"
+        ]
+    },
+    "events": {
+        "type": "object",
+        "title": "Events",
+        "description": "Contains events for entity"
+    }
+},
+"properties": {
+    "minecraft:entity": {
+        "type": "object",
+        "title": "Entity",
+        "description": "Contains all entity data",
+        "properties": {
+            "format_version": {
+                "type": "number",
+                "title": "Format Version",
+                "description": "Version of entity format being used"
+            },
+            "component_groups": {
+                "$ref": "#/definitions/component_groups"
+            },
+            "components": {
+                "$ref": "#/definitions/components"
+            },
+            "events": {
+                "$ref": "#/definitions/events"
+            }
+        },
+        "required": [
+            "format_version",
+            "components"
+        ]
+    }
+},
+"required": [
+    "minecraft:entity"
+]
 }
