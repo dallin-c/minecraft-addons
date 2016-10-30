@@ -4,6 +4,11 @@
     "title": "Entities",
     "description": "Schema for entities in Minecraft Add-Ons",
     "definitions": {
+        "component_groups": {
+            "type": "object",
+            "title": "Component Groups",
+            "description": "Contains groups of componenets"
+        },
         "component_properties": {
             "minecraft:identifier": {
                 "type": "object",
@@ -20,6 +25,23 @@
                     "id"
                 ]
             }
+        },
+        "minecraft:type_family": {
+            "type": "object",
+            "title": "Type of Family",
+            "description": "Family of entity",
+            "properties": {
+                "family": {
+                    "type": "array",
+                    "title": "Family",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            },
+            "required": [
+                "family"
+            ]
         },
         "minecraft:collision_box": {
             "type": "object",
@@ -40,6 +62,20 @@
             "required": [
                 "width",
                 "height"
+            ]
+        },
+        "minecraft:fall_damage": {
+            "type": "object",
+            "title": "Fall Damage",
+            "description": "Entity's fall damage",
+            "properties": {
+                "value": {
+                    "type": "number",
+                    "name": "Value"
+                }
+            },
+            "required": [
+                "value"
             ]
         },
         "minecraft:projectile": {
@@ -160,6 +196,12 @@
                 "minecraft:identifier": {
                     "$ref": "#/definitions/component_properties"
                 },
+                "minecraft:type_family": {
+                    "$ref": "#/definitions/minecraft:type_family"
+                },
+                "minecraft:fall_damage": {
+                    "$ref": "#/definitions/minecraft:fall_damage"
+                },
                 "minecraft:collision_box": {
                     "$ref": "#/definitions/minecraft:collision_box"
                 },
@@ -182,6 +224,9 @@
                     "type": "number",
                     "title": "Format Version",
                     "description": "Version of entity format being used"
+                },
+                "component_groups": {
+                    "$ref": "#/definitions/component_groups"
                 },
                 "components": {
                     "$ref": "#/definitions/components"
